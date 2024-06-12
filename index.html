@@ -9,11 +9,12 @@
             let xhr = new XMLHttpRequest();
             xhr.open("GET", "getStudents.php?page=" + page, true);
             xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // if () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
                         try {
                             let response = JSON.parse(xhr.responseText);
                             let students = response.records;
+                            console.log(students)
                             let output = "<ul>";
                             for (let i = 0; i < students.length; i++) {
                                 output += "<li>" + students[i].name + " - " + students[i].email + "</li>";
@@ -35,7 +36,7 @@
                     } else {
                         console.error("Error fetching data:", xhr.status, xhr.statusText);
                     }
-                // }
+                }
             };
             xhr.send();
         }
