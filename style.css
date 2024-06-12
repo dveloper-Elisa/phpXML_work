@@ -1,0 +1,57 @@
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+}
+.pagination button {
+    margin: 0 5px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+.group{
+    font-weight: 900;
+    font-family: Courier, monospace;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.navigation a:hover{
+    background-color: black;
+    color: white;
+    border: 2px yellow solid;
+}
+.bodyme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.subme{
+    padding: 2rem;
+    border: 2px dotted black;
+}
+.subbody{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
