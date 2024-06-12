@@ -15,7 +15,7 @@ if (!$db) {
 
 $student = new Student($db);
 
-$students_per_page = 2;
+$students_per_page = 1000;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $offset = ($page - 1) * $students_per_page;
 
